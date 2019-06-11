@@ -1,0 +1,363 @@
+/*全局  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #333744;
+}
+
+#app {
+    font-family: "Microsoft Yahei", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    text-align: left;
+}
+
+
+/*框架css  */
+
+.page {
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+}
+
+header {
+    height: 8%;
+    background-color: #666;
+}
+
+.content {
+    height: 92%;
+    background-color: #f50;
+    position: absolute;
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+}
+
+.left {
+    width: 200px;
+    height: 100%;
+    background-color: #333744;
+    float: left;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.right {
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+/*自定义css  */
+
+.el-text-left {
+    text-align: left;
+}
+
+.el-text-right {
+    text-align: right;
+}
+
+.el-text-center {
+    text-align: center;
+}
+
+.visibilityH {
+    visibility: hidden;
+}
+
+.el-no-bold {
+    font-weight: normal;
+}
+
+.el-bold {
+    font-weight: bold;
+}
+
+
+/*修改自带样式*/
+
+.el-dropdown-menu {
+    font-size: 14px;
+    font-family: "Microsoft Yahei", sans-serif;
+    line-height: 20px;
+}
+
+
+/* 登录页 */
+
+.login-container {
+    margin: 10pc auto;
+    padding: 35px 35px 15px;
+    width: 350px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#b8c4cb), to(#f6f6f8));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#6495ed));
+    background: -webkit-linear-gradient(top, #fff, #6495ed, #fff);
+    background: -o-linear-gradient(top, #fff, #6495ed);
+    background-clip: padding-box;
+    box-shadow: 0 0 25px #cac6c6
+}
+
+.title {
+    margin: 0 auto 40px;
+    color: #505458;
+    text-align: center
+}
+
+.remember {
+    margin: 0 0 35px
+}
+
+.el-menu-item,
+.el-submenu__title {
+    color: #fff
+}
+
+.el-submenu__title:hover {
+    background-color: #00c1de
+}
+
+.el-submenu .el-menu-item {
+    background-color: #333744
+}
+
+.el-submenu .el-menu-item:hover {
+    background-color: #4a5064
+}
+
+.el-menu-item.is-active,
+.el-menu-item.is-active:hover,
+.el-submenu .el-menu-item.is-active,
+.el-submenu .el-menu-item.is-active:hover {
+    background-color: #00c1de;
+    color: #fff
+}
+
+.el-menu .iconfont {
+    margin-right: 6px;
+    vertical-align: baseline
+}
+
+.warp-breadcrum {
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef
+}
+
+.warp-main {
+    padding-top: 20px
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%
+}
+
+.topbar-wrap {
+    padding: 0;
+    height: 50px;
+    background: #1d8ce0;
+    line-height: 50px
+}
+
+.main {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    display: flex;
+    overflow: hidden
+}
+
+
+/* aside {
+    width: 180px;
+    flex: 0 0 180px
+} */
+
+.el-menu {
+    height: 100%;
+    border-radius: 0;
+    background-color: #333744
+}
+
+.collapsed {
+    width: 50px
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 9999;
+    display: none;
+    height: auto
+}
+
+.menu-collapsed {
+    width: 50px;
+    flex: 0 0 50px
+}
+
+.menu-expanded {
+    width: 180px;
+    flex: 0 0 180px
+}
+
+.menu-toggle {
+    height: 26px;
+    background: #4a5064;
+    color: #fff;
+    text-align: center;
+    line-height: 30px
+}
+
+.content-container {
+    overflow-y: auto;
+    padding: 10px;
+    background: #fff;
+    flex: 1
+}
+
+.content-wrapper {
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+.time {
+    color: #999;
+    font-size: 13px
+}
+
+.bottom {
+    margin-top: 13px;
+    line-height: 9pt
+}
+
+
+/*票据管理  */
+
+.breadcrumb {
+    border-bottom: 1px dotted #dfe6ec;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.my-el-table .el-table {
+    font-size: 12px;
+}
+
+.right-title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+a.table-right-link {
+    color: rgb(32, 160, 255);
+    text-decoration: none;
+}
+
+
+/*票据详细  */
+
+.my-table {
+    border: 1px solid #dfe6ec;
+    margin: 30px auto 0;
+    border-collapse: collapse;
+}
+
+.my-table .caption {
+    font-size: 24px;
+}
+
+.my-table td {
+    padding: 10px 13px;
+    border: 1px solid #dfe6ec;
+    font-size: 14px;
+}
+
+.my-table .table-title {
+    background-color: #EFF2F7;
+}
+
+.bill-images {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.right-btn {
+    float: right;
+}
+
+
+/*图片上传*/
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: #20a0ff;
+}
+
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+
+/*添加票据  */
+
+.my-table .el-input-group__append {
+    position: relative;
+    left: -2px;
+}
+
+.edit_container {
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.editer {
+    height: 300px;
+}
+
+.submit_btn {
+    text-align: center;
+}

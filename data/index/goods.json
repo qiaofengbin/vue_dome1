@@ -1,0 +1,9 @@
+{
+    "goods": {
+        "errno": 0,
+        "data": {
+            "age": 100,
+            "name": "zhangsan"
+        }
+    }
+}
